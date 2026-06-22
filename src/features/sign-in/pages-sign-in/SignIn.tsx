@@ -1,3 +1,4 @@
+import { Button } from "@/common/button";
 import { Input } from "@/common/Input";
 import { InputPassword } from "@/common/InputPassword";
 
@@ -32,6 +33,8 @@ export default function SignIn() {
 					</label>
 					<InputPassword id="password" placeholder="Masukkan password" />
 				</div>
+
+				<Button>Masuk</Button>
 			</form>
 		</div>
 	);
