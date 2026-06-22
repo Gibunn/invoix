@@ -1,3 +1,41 @@
 export default function SignIn() {
-	return <div>SignIn</div>;
+	return (
+		<div className="w-[45%] p-12 bg-white flex flex-col items-center justify-center h-screen">
+			<div className="mb-7 w-full">
+				<h2 className="text-zinc-950 text-2xl font-bold font-['Plus_Jakarta_Sans'] mb-1">
+					Selamat datang kembali
+				</h2>
+				<p className="justify-start text-gray-500 text-sm font-normal font-['Plus_Jakarta_Sans'] leading-5">
+					Masuk ke akun Invoix kamu
+				</p>
+			</div>
+
+			<form className="flex flex-col gap-4 w-full">
+				<div className="flex flex-col gap-1.5 w-full">
+					<label
+						htmlFor="email"
+						className="text-zinc-950 text-sm font-medium font-['Plus_Jakarta_Sans'] "
+					>
+						Email
+					</label>
+					<input
+						id="email"
+						className="h-10 px-3 py-2.5 bg-violet-100/50 rounded-xl outline-[0.74px] outline-offset-[-0.74px] outline-zinc-950/5"
+					/>
+				</div>
+				<div className="flex flex-col gap-1.5 w-full">
+					<label
+						htmlFor="password"
+						className="text-zinc-950 text-sm font-medium font-['Plus_Jakarta_Sans'] "
+					>
+						Password
+					</label>
+					<input
+						id="password"
+						className="h-10 px-3 py-2.5 bg-violet-100/50 rounded-xl outline-[0.74px] outline-offset-[-0.74px] outline-zinc-950/5"
+					/>
+				</div>
+			</form>
+		</div>
+	);
 }
