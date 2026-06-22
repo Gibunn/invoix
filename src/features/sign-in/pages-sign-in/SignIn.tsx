@@ -1,6 +1,8 @@
+import { Link } from "react-router";
 import { Button } from "@/common/button";
 import { Input } from "@/common/Input";
 import { InputPassword } from "@/common/InputPassword";
+import { Label } from "@/common/label/Label";
 
 export default function SignIn() {
 	return (
@@ -16,21 +18,20 @@ export default function SignIn() {
 
 			<form className="flex flex-col gap-4 w-full">
 				<div className="flex flex-col gap-1.5 w-full">
-					<label
-						htmlFor="email"
-						className="text-zinc-950 text-sm font-medium font-['Plus_Jakarta_Sans'] "
-					>
-						Email
-					</label>
+					<Label htmlFor="email">Email</Label>
 					<Input id="email" placeholder="Masukkan email" />
 				</div>
+
 				<div className="flex flex-col gap-1.5 w-full">
-					<label
-						htmlFor="password"
-						className="text-zinc-950 text-sm font-medium font-['Plus_Jakarta_Sans'] "
-					>
-						Password
-					</label>
+					<div className="flex justify-between">
+						<Label htmlFor="password">Password</Label>
+						<Link
+							to="/forgot-password"
+							className="text-violet-700 text-xs font-medium font-['Plus_Jakarta_Sans']"
+						>
+							Lupa password?
+						</Link>
+					</div>
 					<InputPassword id="password" placeholder="Masukkan password" />
 				</div>
 

@@ -3,7 +3,6 @@ import { type InputHTMLAttributes, useState } from "react";
 import { twMerge } from "tailwind-merge";
 
 interface InputPasswordProps extends InputHTMLAttributes<HTMLInputElement> {
-	className?: string;
 	inputClassName?: string;
 }
 
