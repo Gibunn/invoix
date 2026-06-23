@@ -15,9 +15,13 @@ const navItems = [
 		label: "Dashboard",
 		icon: <LayoutDashboard size={16} />,
 	},
-	{ label: "Invoice", to: "/invoice", icon: <FileText size={16} /> },
-	{ label: "Klien", to: "/client", icon: <Users size={16} /> },
-	{ label: "Pengaturan", to: "/settings", icon: <Settings size={16} /> },
+	{ label: "Invoice", to: "/dashboard/invoice", icon: <FileText size={16} /> },
+	{ label: "Klien", to: "/dashboard/client", icon: <Users size={16} /> },
+	{
+		label: "Pengaturan",
+		to: "/dashboard/settings",
+		icon: <Settings size={16} />,
+	},
 ];
 
 export default function SideBar() {
