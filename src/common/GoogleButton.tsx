@@ -5,6 +5,7 @@ interface GoogleButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {}
 
 export default function GoogleButton({
 	className,
+	children,
 	type = "button",
 	...props
 }: GoogleButtonProps) {
@@ -18,9 +19,7 @@ export default function GoogleButton({
 			)}
 		>
 			<img src="/google.svg" />
-			<span className="text-zinc-950 text-sm font-medium">
-				Masuk dengan Google
-			</span>
+			<span className="text-zinc-950 text-sm font-medium">{children}</span>
 		</button>
 	);
 }
