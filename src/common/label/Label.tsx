@@ -8,10 +8,7 @@ export function Label({ className, htmlFor, children, ...props }: LabelProps) {
 		<label
 			{...props}
 			htmlFor={htmlFor}
-			className={twMerge(
-				"text-zinc-950 text-sm font-medium font-['Plus_Jakarta_Sans']",
-				className,
-			)}
+			className={twMerge("text-zinc-950 text-sm font-medium", className)}
 		>
 			{children}
 		</label>

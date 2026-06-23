@@ -1,9 +1,11 @@
+import AppLogo from "./AppLogo";
+
 export default function AuthLeftSidePanel() {
 	return (
-		<div className="font-['Plus_Jakarta_Sans'] h-screen w-[65%] border p-12 bg-linear-to-br from-zinc-950 via-indigo-900 to-indigo-700 flex flex-col justify-between items-start">
-			<h1 className="text-white text-xl font-bold">Invoix</h1>
+		<div className="h-screen w-[65%] border p-12 bg-linear-to-br from-zinc-950 via-indigo-900 to-indigo-700 flex flex-col justify-between items-start">
+			<AppLogo />
 
-			<div className="">
+			<div>
 				<h2 className="text-white text-4xl font-bold leading-10 mb-4">
 					Invoice profesional
 					<br />

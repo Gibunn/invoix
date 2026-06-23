@@ -15,7 +15,7 @@ export function Button({
 			disabled={disabled}
 			type={type}
 			className={twMerge(
-				"bg-violet-700 flex justify-center items-center rounded-xl text-white font-semibold font-['Plus_Jakarta_Sans'] py-2.5",
+				"bg-violet-700 flex justify-center items-center rounded-xl text-white font-semibold py-2.5",
 				disabled ? "cursor-not-allowed" : "cursor-pointer",
 				className,
 			)}
