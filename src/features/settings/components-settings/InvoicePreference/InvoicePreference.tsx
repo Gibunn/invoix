@@ -6,7 +6,7 @@ import { Label } from "@/common/label";
 export default function InvoicePreference() {
 	return (
 		<Container className="p-6 w-fit">
-			<h2 className="text-zinc-950 text-sm font-semibold mb-4">
+			<h2 className="text-zinc-950 text-sm font-semibold mb-5">
 				Preferensi Invoice
 			</h2>
 
