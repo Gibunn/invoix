@@ -1,6 +1,7 @@
 import { TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
 import { TabItem } from "../../../common/TabItem";
 import BusinessProfile from "../components-settings/BusinessProfile/BusinessProfile";
+import PaymentInformation from "../components-settings/PaymentInformation/PaymentInformation";
 
 export default function Settings() {
 	return (
@@ -16,6 +17,9 @@ export default function Settings() {
 			<TabPanels>
 				<TabPanel>
 					<BusinessProfile />
+				</TabPanel>
+				<TabPanel>
+					<PaymentInformation />
 				</TabPanel>
 			</TabPanels>
 		</TabGroup>
