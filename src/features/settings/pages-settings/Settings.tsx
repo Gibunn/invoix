@@ -1,5 +1,6 @@
 import { TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
 import { TabItem } from "../../../common/TabItem";
+import Account from "../components-settings/Account/Account";
 import BusinessProfile from "../components-settings/BusinessProfile/BusinessProfile";
 import InvoicePreference from "../components-settings/InvoicePreference/InvoicePreference";
 import Notification from "../components-settings/Notification/Notification";
@@ -28,6 +29,9 @@ export default function Settings() {
 				</TabPanel>
 				<TabPanel>
 					<Notification />
+				</TabPanel>
+				<TabPanel>
+					<Account />
 				</TabPanel>
 			</TabPanels>
 		</TabGroup>

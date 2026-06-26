@@ -4,12 +4,14 @@ import { twMerge } from "tailwind-merge";
 
 function CustomTabItem({
 	className,
+	type = "button",
 	...props
 }: ButtonHTMLAttributes<HTMLButtonElement>) {
 	return (
 		<button
+			type={type}
 			className={twMerge(
-				"py-1.5 px-3.5 rounded-[10px] bg-white flex items-center justify-center text-xs font-semibold text-[#6B6B80] transition",
+				"py-1.5 px-3.5 cursor-pointer rounded-[10px] bg-white flex items-center justify-center text-xs font-semibold text-[#6B6B80] transition",
 				className,
 			)}
 			{...props}

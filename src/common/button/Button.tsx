@@ -2,7 +2,7 @@ import type { ButtonHTMLAttributes } from "react";
 import { twMerge } from "tailwind-merge";
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-	variant?: string;
+	variant?: "fill" | "base" | "danger";
 }
 
 export function Button({
@@ -22,6 +22,8 @@ export function Button({
 				disabled ? "cursor-not-allowed" : "cursor-pointer",
 				variant === "base" && "outline-zinc-950/5 outline text-zinc-950",
 				variant === "fill" && "bg-violet-700 text-white",
+				variant === "danger" &&
+					"bg-transparent text-red-600 border-[0.74px] border-red-600",
 				className,
 			)}
 			{...props}
