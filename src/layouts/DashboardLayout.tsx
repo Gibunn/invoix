@@ -6,7 +6,7 @@ export default function DashboardLayout() {
 	return (
 		<main className="flex">
 			<SideBar />
-			<div className="w-full border bg-[#F5F5F8]">
+			<div className="w-full bg-[#F5F5F8]">
 				<DashboardHeader />
 				<Outlet />
 			</div>
